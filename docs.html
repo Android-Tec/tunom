@@ -63,7 +63,7 @@
         <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
           <div class="bg-black py-2 collapse-inner rounded">
             <h6 class="collapse-header">Api de descarga</h6>           
-             <a class="collapse-item" href="/api/playaudio?quero=hola&apikey=Tu_ApiKey">Play</a>
+             <a class="collapse-item" href="/api/playmp3?query=op Komi san&apikey=Tu_ApiKey">Play Mp3</a>
                     <a class="collapse-item" href="api/playvid?quero=edit komi san&apikey=Tu_ApiKey">Play Video</a>                
                <a class="collapse-item" href="api/audiomeme?quero=yamete&apikey=Tu_ApiKey">Audio Meme</a>
           </div>
@@ -305,7 +305,7 @@
               <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                 aria-labelledby="messagesDropdown">
                 <h6 class="dropdown-header">
-                  Información de api:v
+                  Información de api :v
                 </h6>
                 <a class="dropdown-item align-items-center" href="#">
                   <div class="mb-3">
@@ -470,10 +470,24 @@
 </div>
 <div class="card-body text-sm-left font-weight-bold">Hola bienvenido a mi api ☺ usalo de la mejor manera esta api es gratuita y esta dirigida para bots de whatsapp-discord-telegram.</div>
 <div class="card-body text-sm-left font-weight-bold"
- <h3>APIKEY : <target="_blank" class="a1c" >komi-san</div></h3>
+ <h3>APIKEY : <target="_blank" class="a1c" >komi-san</h3></div></div>
+
+<span> <br> </span>
+
+          <footer class="sticky-footer bg-white">
+
+            <div class="container my-auto">
+              
+                <h4 class="card-title"><center>VISITANTES 👁</center></h4>
+                
+               
 </div>
-</div>
-</div>
+<br> </span>
+       <center>
+             <h2 class="mb-1" id="totalhit">0</h2>
+             
+                  <div class="card-body text-sm-left font-weight-bold">Total de vistas en la API 🥳🥳</div></center>
+</div></div>
 <span> <br> </span>
           <footer class="sticky-footer bg-white">
             <div class="container my-auto">
@@ -494,12 +508,24 @@
 <div class="card-body copyright3 text-sm-left font-weight-bold"
 <h4><a href="https://m.youtube.com/channel/UCC777Eegzmtgs_W7jllXmwQ" target="_blank">➣ YouTube</h4></div>
 <div class="card-body copyright3 text-sm-left font-weight-bold"
-<h4><a href="https://androidtechnology-oficial.blogspot.com/" target="_blank">➣ Blog</a></h4></div>
+<h4><a href="https://androidtechnology-oficial.blogspot.com/" target="_blank">➣ Blog</a></h4></div></div></div>
                       
                       
                       
-</div>
-</div>
+                      
+
+
+
+<script>
+ var xhr = new XMLHttpRequest();
+            var url = 'https://api.countapi.xyz/hit/api-yogipw.herokuapp.co8m';
+            xhr.onloadend = function(){
+           data = JSON.parse(this.responseText);
+document.getElementById("totalhit").textContent = data.value
+            };
+            xhr.open("GET", url, true);
+            xhr.send();
+</script>
 
 
 

@@ -1839,23 +1839,23 @@ res.json(loghandler.invalidKey)
 })
 
 
-router.get('/playaudio', async (req, res, next) => {
-     quero = req.query.quero
+router.get('/playmp3', async (req, res, next) => {
+     query = req.query.quero
     var Apikey = req.query.apikey           
 	if(!Apikey) return res.json(loghandler.notparam)
 	if(listkey.includes(Apikey)){
-       fetch(encodeURI(`https://supraz.herokuapp.com/api/playaudio?quero=${quero}&apikey=supraz`))
+       fetch(encodeURI(`https://leyscoders-api.herokuapp.com/api/playmp3?q=${query}&apikey=dappakntlll`))
         .then(response => response.json())
         .then(data => {
-        var titulo = data.titulo;
-        var imagem = data.imagem;
-         var baixar = data.baixar;
-        var tamanho = data.tamanho;       
+        var titulo = data.title;
+        var imagem = data.thumb;
+         var duracion = data.duration;
+        var audio = data.audio;       
              res.json({
                  titulo,               
                  imagem,              
-                 tamanho,
-                 baixar
+                 duracion,
+                 audio
              })
          })
       } else {
